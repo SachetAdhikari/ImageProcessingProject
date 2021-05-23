@@ -28,6 +28,7 @@ x = 0
 for j in range(len(nk)):
     for i in range(len(nk[j])):
         # opnk[j][i]=round(int(read[0])*math.pow(nk[j][i],int(read[1])))
+        # 2 and 3 given as input for constant and gamma
         opnk[j][i] = round(int(2)*math.pow(nk[j][i], int(3)))
 print(opnk)
 print("              ")

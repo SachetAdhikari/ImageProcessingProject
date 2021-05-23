@@ -18,7 +18,7 @@ n = len(nk)
 print(m, n)
 opnk = nk
 x = 0
-filter = [1/9, 1/9, 1/9, 1/9, 1/9, 1/9, 1/9, 1/9, 1/9, ]
+filter = [1, 1, 1, 1, 1, 1, 1, 1, 1]
 for j in range(1, len(nk)-1):
     for i in range(1, len(nk[j])-1):
         data1 = [nk[j-1][i-1], nk[j-1][i], nk[j-1][i+1], nk[j][i - 1],

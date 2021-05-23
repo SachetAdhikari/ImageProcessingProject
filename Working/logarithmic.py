@@ -1,5 +1,7 @@
+import math
 from PIL import Image
 from numpy import array
+
 img = Image.open('..\\InputImages\\lena.png')
 arr = array(img)
 print(arr)
@@ -7,20 +9,22 @@ print(arr)
 if arr.ndim > 2:
     arr = arr[:, :, 0]
 print(arr)
-# 1kbcfsdfb72184t82bsdkmb dhsfb
-nk = arr
-# for i in range(len(nk)):# print(*nk[i])
+# 1kbcfsdfb72184t82bsdkmb dhsfbnk=arr;#nk=[[8,5,8,8,5,8],[8,5,8,8,5,8],[8,5,8,8,5,8],[8,5,8,8,5,8],[8,5,8,8,5,8],[8,5,8,8, 5,8]];
+# for i in range(len(nk)):
+# print(*nk[i])
 x = max(map(max, nk))
 m = len(nk[1])
 n = len(nk)
 print(m, n)
 opnk = nk
 x = 0
-filter = [1/16, 2/16, 1/16, 2/16, 4/16, 2/16, 1/16, 2/16, 1/16]
-for j in range(1, len(nk)-1):
-    for i in range(1, len(nk[j])-1):
-        opnk[j][i] = round(nk[j-1][i-1]*filter[0]+nk[j-1][i]*filter[1]+nk[j - 1][i+1]*filter[2]+nk[j][i - 1]*filter[3] +
-                           nk[j][i]*filter[4]+nk[j][i+1]*filter[5]+nk[j+1][i - 1]*filter[6]+nk[j+1][i]*filter[7]+nk[j+1][i+1]*filter[8])
+#A=int(input("enter constaant"));
+# f = open('log.txt')
+# read = f.readline().split() print(read)
+for j in range(len(nk)):
+    for i in range(len(nk[j])):
+        # opnk[j][i] = round(int(read[0])*math.log10(1+nk[j][i]))
+        opnk[j][i] = round(int(2)*math.log10(1+nk[j][i]))
 print(opnk)
 print(" ")
 # for i in range(len(opnk)):

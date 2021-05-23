@@ -1,5 +1,3 @@
-# ----- Example Python program for negative transformation of a Digital Image -----
-
 
 # import Pillow modules
 
