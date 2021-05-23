@@ -2,15 +2,18 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background: linear-gradient(to right, rgb(29, 74, 85), rgb(11, 38, 51));
   /* box-sizing: border-box; */
 }
+
 #heading {
   color: aqua;
   text-align: center;
   margin: 20px;
   text-decoration: underline;
+  font-size: 40px;
 }
 #imgselection {
   color: aqua;
@@ -66,6 +69,7 @@ span {
   position: absolute;
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: height, width 4s, 5s;
 }
 #inputImageBox {
   left: 30px;
@@ -83,11 +87,44 @@ img {
   width: 600px;
   top: -40vh; */
   border-color: red;
+  transition: 0s;
 }
 img:hover {
-  position: relative;
+  position: absolute;
   height: 600px;
   width: 600px;
   top: -40vh;
-  transition: 1s;
+  /* transition: 1s; */
+}
+#outimg:hover {
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  top: -40vh;
+  right: 0;
+}
+.line {
+  height: 5px;
+  width: 10%;
+  background: green;
+  position: absolute;
+  top: 75%;
+  left: 45%;
+  border-radius: 10px;
+  border: rgb(10, 78, 56) solid 7px;
+}
+.one {
+  top: 65%;
+}
+.two {
+  top: 70%;
+}
+.one:hover {
+  border: red solid 10px;
+}
+.two:hover {
+  border: darkgreen solid 10px;
+}
+.three:hover {
+  border: blue solid 10px;
 }
