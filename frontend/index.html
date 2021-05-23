@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImageProcessing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="heading">Filters in Spatial Domain</h1>
+    <div id="imgselection">
+      <label for="inputImage">Select an image:</label>
+      <input type="file" id="inputImage" name="inputImage" />
+    </div>
+    <div id="filterbuttons">
+      <form action="" method="">
+        <input type="submit" value="Average Filter" />
+        <input type="submit" value="Weighted Average Filter" />
+        <input type="submit" value="Median Filter" />
+        <input type="submit" value="Negative Filter" />
+        <input type="submit" value="Power Law Filter" />
+        <input type="submit" value="Logarithm Filter" />
+        <input type="submit" value="Threshold Filter" />
+      </form>
+      <div id="lowerhalf">
+        <span id="in">Input Image</span>
+        <div class="imagebox" id="inputImageBox">
+          <img src="..\\InputImages\\lena.png"" alt="inputImage" />
+        </div>
+        <span id="out">Output Image</span>
+        <div class="imagebox" id="outputImageBox">
+          <img
+            src="..\\OutputImages\\resultWeightedAverage.png"
+            alt="outputImage"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

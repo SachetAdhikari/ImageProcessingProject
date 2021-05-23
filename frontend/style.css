@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to right, rgb(29, 74, 85), rgb(11, 38, 51));
+  /* box-sizing: border-box; */
+}
+#heading {
+  color: aqua;
+  text-align: center;
+  margin: 20px;
+  text-decoration: underline;
+}
+#imgselection {
+  color: aqua;
+  position: absolute;
+  left: 41%;
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
+#filterbuttons {
+  position: absolute;
+  top: 130px;
+}
+#filterbuttons input {
+  margin: 30px;
+  margin-top: -10px;
+  /* padding: 20px; */
+  background: none;
+  height: 60px;
+  width: 185.76px;
+  background-color: rgba(10, 78, 56, 0.589);
+  border: solid green 2px;
+  cursor: pointer;
+  color: white;
+  /* backdrop-filter: blur(4px); */
+}
+#filterbuttons input:hover {
+  border-radius: 10px;
+  border-width: 5px;
+  background-color: rgb(6, 56, 39);
+  transition: background-color 0.3s;
+}
+#lowerhalf {
+  margin-top: 15px;
+}
+span {
+  color: aqua;
+  position: absolute;
+  margin-top: -10px;
+}
+#in {
+  left: 18%;
+}
+#out {
+  right: 18%;
+}
+.imagebox {
+  margin: 0;
+  /* padding: 0; */
+  height: 50vh;
+  width: 40vw;
+  border: solid green 2px;
+  /* display: inline-block; */
+  position: absolute;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#inputImageBox {
+  left: 30px;
+}
+#outputImageBox {
+  right: 30px;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.imagebox:hover {
+  /* position: relative;
+  height: 600px;
+  width: 600px;
+  top: -40vh; */
+  border-color: red;
+}
+img:hover {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  top: -40vh;
+  transition: 1s;
+}
