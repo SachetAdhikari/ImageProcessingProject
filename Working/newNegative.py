@@ -3,14 +3,12 @@
 
 from PIL import Image
 
-from PIL import ImageFilter
-
 
 # Load the image
 
-img = Image.open('..\\InputImages\\BeforeNegativeTransformation.png')
-
-
+imgz = Image.open('..\\InputImages\\BeforeNegativeTransformation.png')
+img = imgz.copy()
+imgz.close()
 # Display the original image
 
 img.show()
