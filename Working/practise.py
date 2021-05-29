@@ -1,7 +1,8 @@
 from PIL import Image
 from numpy import array
 img = Image.open(
-    "..\\InputImages\\BeforeNegativeTransformation.png")
+    "..\\InputImages\\lena.png")
+a = array(img)
 a = img.convert('LA')
 a.show()
 b = img.convert('RGB')

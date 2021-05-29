@@ -1,7 +1,9 @@
 from statistics import median
 from PIL import Image
 from numpy import array
-img = Image.open("..\\InputImages\\lena.png")
+# img = Image.open("..\\InputImages\\Median.png")
+img = Image.open("..\\OutputImages\\resultThresholding.png")
+img.show()
 arr = array(img)
 img.close()
 if arr.ndim > 2:
@@ -15,4 +17,5 @@ for j in range(1, height-1):
                 arr[j+1][i-1], arr[j+1][i], arr[j+1][i+1]]
         arr[j][i] = median(data)
 newImg = Image.fromarray(arr)
-newImg.save("..\\OutputImages\\resultMedian.png")
+# newImg.save("..\\OutputImages\\resultMedian.png")
+newImg.show()

@@ -1,6 +1,8 @@
 from PIL import Image
 from numpy import array
-img = Image.open("..\\InputImages\\lena.png")
+img = Image.open("..\\InputImages\\Average.jpg")
+# img = Image.open("..\\OutputImages\\resultThresholding.png")
+img.show()
 arr = array(img)
 img.close()
 if arr.ndim > 2:
@@ -17,3 +19,4 @@ for j in range(1, height-1):
         )
 newImg = Image.fromarray(arr)
 newImg.save("..\\OutputImages\\resultAverage.png")
+newImg.show()
