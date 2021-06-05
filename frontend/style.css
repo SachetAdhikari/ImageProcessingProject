@@ -69,7 +69,7 @@ span {
   position: absolute;
   margin-top: 10px;
   margin-bottom: 10px;
-  transition: height, width 4s, 5s;
+  /* transition: height, width 4s, 5s; */
 }
 #inputImageBox {
   left: 30px;
@@ -80,6 +80,7 @@ span {
 img {
   height: 100%;
   width: 100%;
+  filter: none !important;
 }
 .imagebox:hover {
   /* position: relative;
@@ -94,7 +95,11 @@ img:hover {
   height: 600px;
   width: 600px;
   top: -40vh;
+  filter: none !important;
   /* transition: 1s; */
+}
+img:hover body {
+  background-color: red;
 }
 #outimg:hover {
   position: absolute;
@@ -127,4 +132,7 @@ img:hover {
 }
 .three:hover {
   border: blue solid 10px;
+}
+.blurr {
+  filter: blur(2px);
 }

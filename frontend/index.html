@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ImageProcessing</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
     <h1 id="heading">Filters in Spatial Domain</h1>
@@ -26,13 +27,13 @@
       <div id="lowerhalf">
         <span id="in">Input Image</span>
         <div class="imagebox" id="inputImageBox">
-          <img src="..\\InputImages\\lena.png"" alt="inputImage" />
+          <img id="inimg" src="..\\InputImages\\Median.png"" alt="inputImage" />
         </div>
         <span id="out">Output Image</span>
         <div class="imagebox" id="outputImageBox">
           <img
             id="outimg"
-            src="..\\OutputImages\\resultWeightedAverage.png"
+            src="..\\OutputImages\\resultMedian.png"
             alt="outputImage"
           />
         </div>
